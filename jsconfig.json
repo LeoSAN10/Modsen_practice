@@ -1,0 +1,11 @@
+{
+  "compilerOptions": {
+    "baseUrl": "./src",
+    "target": "es6",
+    "paths": {
+      "@pages/*": ["./pages/*"],
+      "@constants/*": ["./constants*"]
+  }
+},
+  "exclude": ["node_modules"]
+}
