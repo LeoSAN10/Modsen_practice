@@ -4,7 +4,8 @@
     "target": "es6",
     "paths": {
       "@pages/*": ["./pages/*"],
-      "@constants/*": ["./constants*"]
+      "@constants/*": ["./constants*"],
+      "@styles/*": ["./Styles*"]
   }
 },
   "exclude": ["node_modules"]
