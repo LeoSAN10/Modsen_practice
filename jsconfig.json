@@ -5,7 +5,9 @@
     "paths": {
       "@pages/*": ["./pages/*"],
       "@constants/*": ["./constants*"],
-      "@styles/*": ["./Styles*"]
+      "@styles/*": ["./styles*"],
+      "@context/*": ["./context*"],
+      "@utils/*": ["./utils*"]
   }
 },
   "exclude": ["node_modules"]

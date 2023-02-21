@@ -1,5 +1,5 @@
 import styled from 'styled-components'
-import * as consts from 'styles/theme'
+import * as consts from 'styles/Theme'
 
 const Container = styled.div`
   ${consts.CENTER}
