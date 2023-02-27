@@ -1,16 +1,15 @@
 import React from "react";
-import { Link } from "react-router-dom";
 
-export const Header = () => {
-  return (
-    <div>
-      <div></div>
-      <div>
-        <Link to="home">Home</Link>
-        <Link to="settings">Settings</Link>
-      </div>
-    </div>
-  );
-};
+import { CustomLink, HeaderContainer, Links, Title } from "./styles";
 
-export default Header;
+export const Header = () => (
+  <HeaderContainer>
+    <Links>
+      <CustomLink to="/">Class</CustomLink>
+      <CustomLink to="/HomePageFunc">Func</CustomLink>
+      <CustomLink to="/settings">Settings</CustomLink>
+    </Links>
+  </HeaderContainer>
+);
+
+export default Header

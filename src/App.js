@@ -1,5 +1,6 @@
 import { Routes, Route } from "react-router-dom";
-import { HomePage } from "pages/HomePage/HomePage";
+import { HomePageClass } from "pages/HomePageClass/HomePageClass";
+import { HomePageFunc } from "pages/HomePageFunc/HomePageFunc"
 import { SettingsPage } from "pages/SettingsPage/SettingsPage";
 import { ROUTES } from "constants/Routes";
 import { changeThemeForProvider } from "utils/changeTheme";
@@ -20,7 +21,8 @@ function App() {
           <GlobalStyle />
           <HistoryContext.Provider value={{ history, setHistory }}>
             <Routes>
-              <Route path={ROUTES.HOME_PAGE} element={<HomePage />} />
+              <Route path={ROUTES.HOME_PAGE_Class} element={<HomePageClass />} />
+              <Route path={ROUTES.HOME_PAGE_Func} element={<HomePageFunc />} />
               <Route path={ROUTES.SETTINGS_PAGE} element={<SettingsPage />} />
             </Routes>
           </HistoryContext.Provider>

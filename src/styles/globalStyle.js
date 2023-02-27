@@ -21,7 +21,6 @@ export default createGlobalStyle`
     width: 16px; 
     border-radius: ${consts.BORDER_RADIUS.L}px;
 }
-/* ползунок скроллбара */
 ::-webkit-scrollbar-thumb {
     background-color: ${({ theme }) => theme.body};
     border-radius: ${consts.BORDER_RADIUS.L}px;

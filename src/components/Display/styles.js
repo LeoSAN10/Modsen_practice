@@ -1,5 +1,5 @@
 import styled from "styled-components";
-import * as consts from "styles/themes";
+import * as consts from "styles/Theme";
 
 const DisplayBlock = styled.div`
   border-bottom: 5px solid;

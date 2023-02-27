@@ -1,7 +1,7 @@
 import React from "react";
-import { Panel } from "components/Panel/Panel";
+import { ControlPanel } from "components/ControlPanel/ControlPanel";
 import { Display } from "components/Display/Display";
-import { OPERATORS } from "constants/operators";
+import { OPERATORS } from "constants//Operators";
 
 import { HistoryContext } from "context/context";
 
@@ -25,7 +25,7 @@ import {
   numberIsFloat,
 } from "utils/operations";
 
-import { Container } from "components/Panel/styles";
+import { CalcWrapper } from "components/CalcLayout/styles";
 
 export class ClassCalculator extends React.Component {
   constructor(props) {
@@ -289,10 +289,10 @@ export class ClassCalculator extends React.Component {
   render() {
     const { expression, isError, result } = this.state;
     return (
-      <Container>
+      <CalcWrapper>
         <Display error={isError} value={expression} result={result} />
-        <Panel handleClick={this.handleExpressionValue} />
-      </Container>
+        <ControlPanel handleClick={this.handleExpressionValue} />
+      </CalcWrapper>
     );
   }
 }

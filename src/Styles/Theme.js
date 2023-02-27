@@ -1,7 +1,7 @@
 const light = {
   text: "#000000",
   body: "#ffffff",
-  header: "#585c5a",
+  header: "#ffffff",
   buttonBackground: "#6281d9",
 };
 const dark = {
